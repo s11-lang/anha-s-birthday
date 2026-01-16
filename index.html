@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Anha</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ffdde1, #ee9ca7);
+    text-align:center;
+}
+
+.section{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+h1{
+    color:#d63384;
+}
+
+p{
+    font-size:18px;
+    color:#5a0f2e;
+}
+
+.btn{
+    background:#d63384;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    font-size:18px;
+    margin:10px;
+}
+
+.heart{
+    font-size:40px;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SLIDE 1 -->
+<div class="section">
+<h1>✨ Happy Birthday Anha ✨</h1>
+<p>Scroll down for your surprise 💖</p>
+<div class="heart">❤️</div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="section">
+<h1>Why You're Special</h1>
+<p>Your smile makes everything brighter 🌸</p>
+<p>You are kind, sweet and amazing ✨</p>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="section">
+<h1>What I Feel</h1>
+<p>Talking to you always makes my day better 💭</p>
+<p>You mean a lot to me...</p>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="section">
+<h1>Once Again...</h1>
+<h1>🎂 Happy Birthday 🎂</h1>
+<p>May all your dreams come true!</p>
+</div>
+
+<!-- FINAL PROPOSAL SLIDE -->
+<div class="section">
+<h1>🌹 A Question From My Heart 🌹</h1>
+
+<p>
+Anha, I really like you.  
+Talking to you makes me happy.  
+On your special day, I want to ask you something honest...
+</p>
+
+<h2>👉 Will you be my girlfriend? ❤️</h2>
+
+<button class="btn" onclick="yes()">YES 😊</button>
+<button class="btn" onclick="maybe()">MAYBE 🤍</button>
+
+<p id="reply"></p>
+</div>
+
+<script>
+function yes(){
+document.getElementById("reply").innerHTML = 
+"Yayyy! You just made my day 💖";
+}
+
+function maybe(){
+document.getElementById("reply").innerHTML = 
+"No problem! Take your time 😊";
+}
+</script>
+
+</body>
+</html>
